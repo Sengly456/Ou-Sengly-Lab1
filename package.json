@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha --exit",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+     "coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
     "express": "^5.1.0",
     "mocha": "^11.7.4",
     "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "nyc": "^17.1.0"
   }
 }
