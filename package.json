@@ -30,5 +30,11 @@
   },
   "devDependencies": {
     "nyc": "^17.1.0"
-  }
+  },
+  "nyc": {
+  "reporter": ["text", "html"],
+  "all": true,
+  "include": ["app.js", "server.js"],
+  "exclude": ["test"]
+}
 }
